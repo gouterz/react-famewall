@@ -1,10 +1,10 @@
 {
-  "name": "famewall-react",
+  "name": "react-famewall",
   "version": "1.0.0",
   "description": "React Component for Famewall Embeds",
   "author": "Goutham J <goutham@famewall.io>",
   "license": "MIT",
-  "repository": "goutham8343/react-famewall",
+  "repository": "gouterz/react-famewall",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

@@ -2,7 +2,7 @@
 
 > React component for Famewall Embeds
 
-Highlight and display social media mentions as beautiful testimonials, [sign up](https://famewall.io).
+Highlight and display social media mentions as beautiful testimonials [Sign up here](https://famewall.io).
 
 ## Install
 

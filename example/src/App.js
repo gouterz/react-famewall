@@ -6,7 +6,7 @@ import FamewallEmbed from 'react-famewall'
 export default function App() {
   return (
     <div className='App'>
-      <FamewallEmbed url='famewall' />
+      <FamewallEmbed wallUrl='famewall' />
     </div>
   )
 }

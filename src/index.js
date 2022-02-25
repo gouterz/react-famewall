@@ -2,8 +2,8 @@ import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 import {nanoid} from 'nanoid'
 
-const FamewallEmbed = ({ url }) => {
-  if (!url) {
+const FamewallEmbed = ({ wallUrl }) => {
+  if (!wallUrl) {
     console.error('A url is required')
     return null
   }
@@ -11,12 +11,12 @@ const FamewallEmbed = ({ url }) => {
 
   return (
     <IframeResizer
-      title={`Famewall Embed ${url.replace(
+      title={`Famewall Embed ${wallUrl.replace(
         'https://embed.famewall.io',
         ''
       )}`}
       id={embedId}
-      src={`https://embed.famewall.io/${url}`}
+      src={`https://embed.famewall.io/${wallUrl}`}
       frameBorder='0'
       scrolling='yes'
       width='100%'

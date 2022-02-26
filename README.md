@@ -2,7 +2,7 @@
 
 > React component for Famewall Embeds
 
-Highlight and display social media mentions as beautiful testimonials [Sign up here](https://famewall.io).
+Highlight and display social media mentions as beautiful testimonials. Enjoy the fame you receive from customers by [signing up here](https://famewall.io).
 
 ## Install
 
@@ -20,7 +20,7 @@ const App = () => {
 
   return(
     <FamewallEmbed
-      url="famewall"
+      wallUrl="famewall"
     />
   )
 }

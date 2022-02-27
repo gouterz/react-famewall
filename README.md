@@ -1,4 +1,4 @@
-# famewall-react
+# react-famewall
 
 > React component for Famewall Embeds
 

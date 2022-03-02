@@ -4,19 +4,16 @@ import {nanoid} from 'nanoid'
 
 const FamewallEmbed = ({ wallUrl }) => {
   if (!wallUrl) {
-    console.error('A url is required')
+    console.error('Wall URL is required')
     return null
   }
   const embedId = nanoid()
 
   return (
     <IframeResizer
-      title={`Famewall Embed ${wallUrl.replace(
-        'https://embed.famewall.io',
-        ''
-      )}`}
+      title={`Famewall Embed ${wallUrl}`}
       id={embedId}
-      src={`https://embed.famewall.io/${wallUrl}`}
+      src={`https://embed.famewall.io/wall/${wallUrl}`}
       frameBorder='0'
       scrolling='yes'
       width='100%'

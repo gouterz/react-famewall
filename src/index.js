@@ -15,7 +15,7 @@ const FamewallEmbed = ({ wallUrl }) => {
       id={embedId}
       src={`https://embed.famewall.io/wall/${wallUrl}`}
       frameBorder='0'
-      scrolling='yes'
+      scrolling={false}
       width='100%'
       style={{
         border: 0

@@ -1,5 +1,7 @@
 # react-famewall
 
+[![npm](https://img.shields.io/npm/v/react-famewall)](https://www.npmjs.com/package/react-famewall)
+
 > React component for Famewall Embeds
 
 Highlight and display social media mentions as beautiful testimonials. Enjoy the fame you receive from customers by [signing up here](https://famewall.io).

@@ -30,6 +30,8 @@ const App = () => {
 
 ## Dynamic card color (For websites with Dark Mode/ Light Mode Switch)
 
+Use the 'cardTheme' prop to dynamically feed in "light" or "dark" if you want the wall to be compatible with dynamic card color based on your website's theme
+
 ```jsx
 
 const App = () => {

@@ -12,7 +12,7 @@ Highlight and display social media mentions as beautiful testimonials. Enjoy the
 npm install --save react-famewall
 ```
 
-## Usage
+## Basic Usage
 
 ```jsx
 import React from 'react'
@@ -23,6 +23,34 @@ const App = () => {
   return(
     <FamewallEmbed
       wallUrl="famewall"
+    />
+  )
+}
+```
+
+## Dynamic card color (For websites with Dark Mode/ Light Mode Switch)
+
+```jsx
+
+const App = () => {
+
+  return(
+    <FamewallEmbed
+      wallUrl="famewall"
+      cardTheme="dark"
+    />
+  )
+}
+```
+
+```jsx
+
+const App = () => {
+
+  return(
+    <FamewallEmbed
+      wallUrl="famewall"
+      cardTheme="light"
     />
   )
 }

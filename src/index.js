@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 import {nanoid} from 'nanoid'
 
@@ -8,19 +8,6 @@ const FamewallEmbed = ({ wallUrl, cardTheme }) => {
     return null
   }
   const embedId = nanoid()
-
-  useEffect(()=>{},[cardTheme])
-
-  useEffect(()=>{
-    try{
-    const script = document.createElement("script");
-
-    script.src = "https://embed.famewall.io/iframeResizer.min.js";
-    script.async = true;
-    document.body.appendChild(script);
-    }
-    catch(err){}
-  },[])
 
   return (
     <IframeResizer
@@ -33,7 +20,9 @@ const FamewallEmbed = ({ wallUrl, cardTheme }) => {
       scrolling={false}
       width='100%'
       style={{
-        border: 0
+        border: 0,
+        width: '1px',
+        minWidth: '100%'
       }}
     />
   )

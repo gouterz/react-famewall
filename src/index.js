@@ -13,11 +13,11 @@ const FamewallEmbed = ({ wallUrl, cardTheme }) => {
     <IframeResizer
       title={`Famewall Embed ${wallUrl}`}
       id={embedId}
-      src={cardTheme?`https://embed.famewall.io/wall/${wallUrl}?theme=${cardTheme}`:`https://embed.famewall.io/wall/${wallUrl}`}
+      src={cardTheme?`https://wallembed.famewall.io/wall/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/wall/${wallUrl}`}
       frameBorder='0'
       checkOrigin={false}
       autoResize={true}
-      scrolling={false}
+      scrolling="no"
       width='100%'
       style={{
         border: 0,

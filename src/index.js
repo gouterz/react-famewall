@@ -2,7 +2,7 @@ import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 import {nanoid} from 'nanoid'
 
-const FamewallEmbed = ({ wallUrl, cardTheme }) => {
+const FamewallEmbed = ({ wallUrl, cardTheme, carouselMode=false }) => {
   if (!wallUrl) {
     console.error('Wall URL is required')
     return null
@@ -13,7 +13,7 @@ const FamewallEmbed = ({ wallUrl, cardTheme }) => {
     <IframeResizer
       title={`Famewall Embed ${wallUrl}`}
       id={embedId}
-      src={cardTheme?`https://wallembed.famewall.io/wall/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/wall/${wallUrl}`}
+      src={cardTheme?`https://wallembed.famewall.io/${!carouselMode?'wall':'carousel'}/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/${!carouselMode?'wall':'carousel'}/${wallUrl}`}
       frameBorder='0'
       checkOrigin={false}
       autoResize={true}

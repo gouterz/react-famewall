@@ -58,6 +58,24 @@ const App = () => {
 }
 ```
 
+## Carousel Embed
+
+Use 'carouselMode' prop to enable testimonials to be displayed as a carousel
+
+```jsx
+
+const App = () => {
+
+  return(
+    <FamewallEmbed
+      wallUrl="famewall"
+      cardTheme="dark"
+      carouselMode={true}
+    />
+  )
+}
+```
+
 ## License
 
 MIT ©2021 [Famewall](https://famewall.io)

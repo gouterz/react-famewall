@@ -30,7 +30,7 @@ class FamewallEmbed extends React.Component {
 
     return (
       <div ref={el => (this.instance = el)} style={{width:'100%', height:'100%'}}>
-        <div class="famewall-embed" data-src={wallUrl} data-format={!carouselMode?"grid":"carousel"} data-theme={cardTheme==='dark'?'dark':'light'} style={{ width: "100%" }}></div>
+        <div className="famewall-embed" data-src={wallUrl} data-format={!carouselMode?"grid":"carousel"} data-theme={cardTheme==='dark'?'dark':'light'} style={{ width: "100%" }}></div>
       </div>
 
     )

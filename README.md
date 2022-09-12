@@ -76,6 +76,24 @@ const App = () => {
 }
 ```
 
+## Dual Slider Embed
+
+Use 'dualSliderMode' prop to enable testimonials to be displayed as a carousel
+
+```jsx
+
+const App = () => {
+
+  return(
+    <FamewallEmbed
+      wallUrl="famewall"
+      cardTheme="light"
+      dualSliderMode={true}
+    />
+  )
+}
+```
+
 ## License
 
 MIT ©2021 [Famewall](https://famewall.io)

@@ -1,7 +1,7 @@
 import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 
-const FamewallEmbed = ({ wallUrl, cardTheme, carouselMode=false }) => {
+const FamewallEmbed = ({ wallUrl, cardTheme, carouselMode=false, dualSliderMode=false }) => {
   if (!wallUrl) {
     console.error('Wall URL is required')
     return null
@@ -10,7 +10,7 @@ const FamewallEmbed = ({ wallUrl, cardTheme, carouselMode=false }) => {
   return (
     <IframeResizer
       title={`Famewall Embed ${wallUrl}`}
-      src={cardTheme?`https://wallembed.famewall.io/${!carouselMode?'wall':'carousel'}/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/${!carouselMode?'wall':'carousel'}/${wallUrl}`}
+      src={cardTheme?`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}`}
       frameBorder='0'
       checkOrigin={false}
       autoResize={true}

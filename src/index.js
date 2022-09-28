@@ -2,15 +2,15 @@ import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 
 const FamewallEmbed = ({ wallUrl,avatarCollectionId, cardTheme, carouselMode=false, dualSliderMode=false }) => {
-  if (!wallUrl) {
-    console.error('Wall URL is required')
+  if (!wallUrl && !avatarCollectionId) {
+    console.error('Wall URL/ Collection Id is required')
     return null
   }
 
   if(avatarCollectionId){
     return(
       <IframeResizer
-      title={`Famewall Embed ${wallUrl}`}
+      title={`Famewall Embed ${avatarCollectionId}`}
       src={`https://wallembed.famewall.io/avatars/${avatarCollectionId}`}
       frameBorder='0'
       checkOrigin={false}

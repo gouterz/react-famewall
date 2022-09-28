@@ -94,6 +94,20 @@ const App = () => {
 }
 ```
 
+## Avatar Embed
+
+```jsx
+
+const App = () => {
+
+  return(
+   <FamewallEmbed
+      avatarCollectionId="<Place collection ID from dashboard>"
+    />
+  )
+}
+```
+
 ## License
 
 MIT ©2021 [Famewall](https://famewall.io)

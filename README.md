@@ -76,6 +76,23 @@ const App = () => {
 }
 ```
 
+To enable autolooping of carousels use autoplay flag as boolean variable
+
+```jsx
+
+const App = () => {
+
+  return(
+    <FamewallEmbed
+      wallUrl="famewall"
+      cardTheme="dark"
+      carouselMode={true}
+      autoplay={true}
+    />
+  )
+}
+```
+
 ## Dual Slider Embed
 
 Use 'dualSliderMode' prop to enable testimonials to be displayed as a carousel

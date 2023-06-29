@@ -1,7 +1,7 @@
 import React from 'react'
 import IframeResizer from 'iframe-resizer-react'
 
-const FamewallEmbed = ({ wallUrl,avatarCollectionId, cardTheme, carouselMode=false, dualSliderMode=false }) => {
+const FamewallEmbed = ({ wallUrl,avatarCollectionId, cardTheme, carouselMode=false, dualSliderMode=false,autoplay=false }) => {
   if (!wallUrl && !avatarCollectionId) {
     console.error('Wall URL/ Collection Id is required')
     return null
@@ -28,7 +28,7 @@ const FamewallEmbed = ({ wallUrl,avatarCollectionId, cardTheme, carouselMode=fal
   return (
     <IframeResizer
       title={`Famewall Embed ${wallUrl}`}
-      src={cardTheme?`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}?theme=${cardTheme}`:`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}`}
+      src={cardTheme?`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}?theme=${cardTheme}${autoplay?'&autoplay=1':''}`:`https://wallembed.famewall.io/${!carouselMode? (!dualSliderMode?'wall':'slider') :'carousel'}/${wallUrl}${autoplay?'?autoplay=1':''}`}
       frameBorder='0'
       checkOrigin={false}
       autoResize={true}
